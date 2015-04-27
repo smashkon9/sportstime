@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    
+	<title>Account Created | Music Finder</title>
+   <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("60e6d00043a1c285b57b44f38ef67e72");</script><!-- end Mixpanel -->
+
+<!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("60e6d00043a1c285b57b44f38ef67e72");</script><!-- end Mixpanel -->
+
+   <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
+<script type="text/javascript" charset="utf-8" src="soundcloud.player.api.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+  // ------- a simple auto-play example ----------
+  // please refer to the documentation for the full list of available events
+  soundcloud.addEventListener('onPlayerReady', function(player, data) {
+    // please refer to the documentation for the full list of available methods
+    // btw, here the flash can be accessed too as 'this' like in 'this.api_play()'
+    
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<!--<h1> <p> <center> <b> Happy Listening! <b> </center> </p> </h1>
+<p> Thank you for creating your account.  You have sent us the following information:</p>
+<p> Username: <script>document.write(gup("username"))</script></p>
+<p>Email:<script>document.write(decodeURIComponent(gup("email")))</script></p>
+<p> Genre: Folk </p>
+<script type="text/javascript">
+function gup(name)
+{name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1]; }
+
+mixpanel.people.set ({"$email": decodeURIComponent(gup("email")), "$name": gup("username")})
+mixpanel.alias("$email")
+mixpanel.people.increment ("Song Impressions", 2)
+mixpanel.track("Song Played")
+mixpanel.track("Page Loaded", {"Page Name":"Player Page"})
+</script>-->
+<script>
+      mixpanel.track("Page Loaded", {"Page Name": "Account Created"})
+</script>
+    
+<h1>Account Created!</h1>
+<p>Thank you for creating your account. You've sent us the following information:</p>
+<ul>
+  <li>Name: Ally</li>
+	<li>E-Mail: ally@mixpanel.com</li>
+	<li>Favorite Music: Folk</li>
+</ul>
+
+<h1>Recommended Music</h1>
+<div id="music"><ul>
+	<li>Cat Stevens - "Wild World" <a href="javascript: mixpanel.track('Song Played',{'Song Name':'Wild World','Artist':'Cat Stevens','Style':'Folk'}); https://www.youtube.com/watch?v=0k6mQyu2GxM">[play]</a></li>
+	<li>Paul Simon - "You Can Call Me Al" <a href="javascript: mixpanel.track('Song Played',{'Song Name':'You Can Call Me Al','Artist':'Paul Simon','Style':'Folk'}); https://www.youtube.com/watch?v=uq-gYOrU8bA">[play]</a></li>
+
+</ul></div>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/0k6mQyu2GxM" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/uq-gYOrU8bA" frameborder="0" allowfullscreen></iframe>
+
+
+<!-- ignore this, it's the Soundcloud stuff 
+<object height="81" width="300px" id="7th" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+    <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F20946691&amp;enable_api=true&amp;object_id=7th"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F20946691&amp;enable_api=true&amp;object_id=7th" type="application/x-shockwave-flash" width="300px" name="7th"></embed>
+</object>
+
+<object height="81" width="300px" id="Bach" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+    <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F16981191&amp;enable_api=true&amp;object_id=7th"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F16981191&amp;enable_api=true&amp;object_id=7th" type="application/x-shockwave-flash" width="300px" name="Bach"></embed>
+</object>-->
+
+
+
+</body>
+</html>
+
